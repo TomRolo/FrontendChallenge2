@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+<style>
+    :root{
+        font-size: 15px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');   
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: black;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    margin: 50px 0px;
+    width: 85vw;
+    height: 90vh;
+    max-width: 1000px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+#hero-pic{
+    height: 33%;
+    width: 100%;
+    background-image: url("images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tint{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(277, 64%, 61%,30%);
+}
+#hero-pitch{
+    height: 33%;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+#hero-pitch h1{
+    font-family: 'Inter';
+}
+
+#hero-pitch h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+
+#hero-pitch p{
+    padding: 2rem 0px;
+    line-height: 2rem;
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+}
+#hero-stats{
+    height: 34%;
+    width: 100%;
+    text-align: center;
+}
+#hero-stats .stat{
+    padding-bottom: 30px;
+}
+#hero-stats .stat h1{
+    font-family: 'Inter';
+}
+#hero-stats .stat p{
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.6);
+    padding-top: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    .wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    #card{
+        display: flex;
+        flex-direction: row-reverse;
+        height:50vh;
+        max-height: 400px;
+    }
+    #hero-pic{
+        height: 100%;
+        width: 50%;
+    }
+    .card-wrapper{
+        height: 100%;
+        padding: 3rem 2rem;
+        width: 50%;
+    }
+    #hero-pitch{
+        padding: 0 2rem;
+        text-align: left;
+        height: fit-content;
+    }
+    #hero-pitch p{
+        padding-bottom: 1rem;
+    }
+    #hero-stats{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: fit-content;
+        text-align: left;
+        padding: 2rem;
+    }
+}
+</style>
+</head>
+<body>
+    <main class="wrapper">
+        <div id="card">
+            <div id="hero-pic">
+                <div class="tint"></div>
+            </div>
+            <div class="card-wrapper">
+                <div id="hero-pitch">
+                    <h1>Get <span>insights</span> that help your business grow.</h1>
+                    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+                    experience, and overall efficiency.
+                    </p>
+                </div>
+                <div id="hero-stats">
+                    <div class="stat">
+                        <h1>10k+</h1>
+                        <p>COPMPANIES</p>
+                    </div>
+                    <div class="stat">
+                        <h1>314</h1>
+                        <p>TEMPLATES</p>
+                    </div>
+                    <div class="stat">
+                        <h1>12m+</h1>
+                        <p>QUERIES</p>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </main>
+</html>
